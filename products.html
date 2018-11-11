@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Company Title */
+.c-header {
+  padding: 20px;
+  text-align: center;
+  background: #ffba07;
+}
+
+.c-header h1 {
+    font-size: 50px;
+}
+
+/* Page header */
+.header {
+    padding: 10px;
+    text-align: center; 
+    color:  #04a5f0;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /*Google Chrome */
+    position: sticky;
+    top: 0  ;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 76.5px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Active nav color */
+.active {
+  background-color: #F65314;
+  color: black;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+
+/* Products page design */
+.card {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;  
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 24px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  background-color: #F65314;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.list {
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+//* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<title> WGS by Haseeb </title>
+
+<!-- Company header -->
+<div class="c-header">
+  <h1>Windows Gadget Solutions</h1>
+</div>
+
+<div class="topnav">
+  <a href="homepage.html">Home</a>
+  <a class="active" href="products.html">Products</a>
+  <a href="blogs.html">Blogs</a>
+  <a href="team.html">Team</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Me</a>
+</div>
+
+<h2 class="header">Products</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="surfacelaptop.jpg" alt="Microsoft Surface Laptop" style="width:100%">
+        <h3>Microsoft Surface Laptop</h3>
+        <p class="price">$1,899.00</p>
+        <ul class="list">
+          <li>13.5” Touch Screen</li>
+          <li>Intel Core i7</li>
+          <li>16GB Memory</li>
+          <li>512GB Solid State Drive</li>
+          <li>Platinum</li>
+        </ul>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="yoga920.jpg" alt="Lenovo Yoga 920" style="width:100%">
+        <h3>Lenovo - Yoga 920 2-in-1</h3>
+        <p class="price">$1,749.99</p>
+        <ul class="list">
+          <li>13.9" 4K Ultra HD Touch-Screen</li>
+          <li>Intel Core i7</li>
+          <li>16GB Memory</li>
+          <li>512GB Solid State Drive</li>
+          <li>Bronze</li>
+        </ul>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="surfacelaptop2.jpg" alt="Microsoft Surface Laptop 2" style="width:100%" >
+        <h3>Microsoft Surface Laptop 2</h3>
+        <p class="price">$1,299.00</p>
+        <ul class="list">
+          <li>13.5” Touch Screen</li>
+          <li>Intel Core i5</li>
+          <li>8GB Memory</li>
+          <li>256GB Solid State Drive</li>
+          <li>Black</li>
+        </ul>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="surfacebook2-product.jpg" alt="Microsoft Surface Book 2" style="width:100%">
+        <h3>Microsoft Surface Book 2</h3>
+        <p class="price">$1,149.00</p>
+        <ul class="list">
+          <li>2-in-1 13.5” Touch Screen</li>
+          <li>Intel Core i5</li>
+          <li>8GB Memory</li>
+          <li>128GB Solid State Drive</li>
+          <li>Silver</li>
+        </ul>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="surfacego.jpg" alt="Microsoft Surface Go" style="width:100%">
+        <h3>Microsoft Surface Go</h3>
+        <p class="price">$399.00</p>
+        <ul class="list">
+          <li>10” Touch Screen</li>
+          <li>Intel Pentium Gold</li>
+          <li>4GB Memory</li>
+          <li>64GB Solid State Drive</li>
+          <li>Silver</li>
+        </ul>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="surfacepro6.jpg" alt="Microsoft Surface Pro 6" style="width:100%">
+        <h3>Microsoft Surface Pro 6</h3>
+        <p class="price">$1,499.00</p>
+        <ul class="list">
+          <li>12.3” Touch Screen</li>
+          <li>Intel Core i7</li>
+          <li>8GB Memory</li>
+          <li>256GB Solid State Drive</li>
+          <li>Platinum</li>
+        </ul>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="xps13.jpg" alt="Dell XPS 13" style="width:100%">
+        <h3>Dell - XPS 13.3"</h3>
+        <p class="price">$1,469.99</p>
+        <ul class="list">
+          <li>4K Ultra HD Touch-Screen Laptop</li>
+          <li>Intel Core i7</li>
+          <li>16GB Memory</li>
+          <li>1TB Solid State Drive</li>
+          <li>Silver W/Black Carbon Fiber </li>
+        </ul>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="xps15.jpg" alt="Dell XPS 15 2 in 1" style="width:100%">
+        <h3>Dell - XPS 2-in-1 15.6"</h3>
+        <p class="price">$1,999.99</p>
+        <ul class="list">
+          <li>4K Ultra HD Touch-Screen Laptop</li>
+          <li>Intel Core i7</li>
+          <li>16GB Memory</li>
+          <li>256GB Solid State Drive</li>
+          <li>Black</li>
+        </ul>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="footer">
+  <h3>&copy; Reserved by Haseeb</h3>
+</div>
+
+</body>
+</html>

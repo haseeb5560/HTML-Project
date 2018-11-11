@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Company Title */
+.c-header {
+  padding: 20px;
+  text-align: center;
+  background: #ffba07;
+}
+
+.c-header h1 {
+    font-size: 50px;
+}
+
+/* Page header */
+.header {
+    padding: 10px;
+    text-align: center;
+    color:  #04a5f0;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /*Google Chrome */
+    position: sticky;
+    top: 0  ;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 76.5px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Active nav color */
+.active {
+  background-color: #F65314;
+  color: black;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+
+/* Products page design */
+.card {
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.5);
+  max-width: 300px;  
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card button {
+  border: none;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 20px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  background-color: #F65314;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.list {
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+//* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<title> WGS by Haseeb </title>
+
+<!-- Company header -->
+<div class="c-header">
+  <h1>Windows Gadget Solutions</h1>
+</div>
+
+<div class="topnav">
+  <a href="homepage.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="blogs.html">Blogs</a>
+  <a class="active" href="team.html">Team</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About Me</a>
+</div>
+
+<h2 class="header">Team</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="haseeb.jpg" alt="Haseeb Ahmed" style="width:100%">
+        <h3>Haseeb Ahmed</h3>
+        <p>CEO & Founder</p>
+        <p>I am a senior majoring in Information Systems & Operations Management within the School of Business of George Mason University.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="haseeb.jpg" alt="Haseeb Ahmed" style="width:100%">
+        <h3>Haseeb Ahmed</h3>
+        <p>Director</p>
+        <p>I am a senior majoring in Information Systems & Operations Management within the School of Business of George Mason University.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="haseeb.jpg" alt="Haseeb Ahmed" style="width:100%">
+        <h3>Haseeb Ahmed</h3>
+        <p>CFO</p>
+        <p>I am a senior majoring in Information Systems & Operations Management within the School of Business of George Mason University.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="content">
+        <img src="haseeb.jpg" alt="Haseeb Ahmed" style="width:100%">
+        <h3>Haseeb Ahmed</h3>
+        Head of Human Resource
+        <p>I am a senior majoring in Information Systems & Operations Management within the School of Business of George Mason University.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<div class="footer">
+  <h3>&copy; Reserved by Haseeb</h3>
+</div>
+
+</body>
+</html>

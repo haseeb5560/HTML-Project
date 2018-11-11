@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		    $("input").focus(function(){
+		        $(this).css("background-color", "#cccccc");
+		    });
+		    $("input").blur(function(){
+		        $(this).css("background-color", "#ffffff");
+		    });
+		});
+	</script>
+  <script>
+      function submit_form() {
+
+    var first_name = document.getElementById('first_name').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var comments = document.getElementById('comments').value;
+    var middle_name = document.getElementById('middle_name').value;
+    var last_name = document.getElementById('last_name').value;
+    var address = document.getElementById('address').value;
+    var formData = new FormData();
+    formData.append('first_name', first_name);
+    formData.append('email', email);
+    formData.append('phone', phone);
+    formData.append('middle_name', middle_name);
+    formData.append('last_name', last_name);
+    formData.append('address', address);
+  }
+  </script>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Company Title */
+.c-header {
+  padding: 20px;
+  text-align: center;
+  background: #ffba07;
+}
+
+.c-header h1 {
+    font-size: 50px;
+}
+
+/* Page header */
+.header {
+    padding: 10px;
+    text-align: center; 
+    color:  #04a5f0;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /*Google Chrome */
+    position: sticky;
+    top: 0  ;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 76.5px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Active nav color */
+.active {
+  background-color: #F65314;
+  color: black;
+}
+
+/* Create two equal columns that floats next to each other */
+/* Center */
+.center {   
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn, .center {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<title> WGS by Haseeb </title>
+
+<!-- Company header -->
+<div class="c-header">
+  <h1>Windows Gadget Solutions</h1>
+</div>
+
+<div class="topnav">
+  <a href="homepage.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="blogs.html">Blogs</a>
+  <a href="team.html">Team</a>
+  <a class="active" href="contact.html">Contact</a>
+  <a href="about.html">About Me</a>
+</div>
+
+<div class="row">
+  <div class="center">
+    <div class="card">
+      <header class="header"><h2>Contact us</header></h2>
+      <fieldset><h4>Personal Information</h4>
+        <form action="#" method="post">
+          <div id="txtHint"></div>
+           <input type="text" placeholder="First Name" name="first_name"> 
+           <input type="text" placeholder="Middle Name" name="middle_name">  
+           <input type="text" placeholder="Last Name" name="last_name">
+           <select name="suffix">
+            <option value="junior">Jr.</option>
+            <option value="senior">Sr.</option>
+            <option value="one">I</option>
+            <option value="two">II</option>
+            <option value="three">III</option>
+           </select>
+           <input type="text" placeholder="Phone Number" name="phonenumber"> 
+           <input type="text" name="E-mail" placeholder="E-mail Address"> <br><br>
+           <textarea name="message" row="30" cols="44" placeholder="Enter subject here. We will get back you within 1-2 business days." rows="7"></textarea><br>
+          
+          <br><h4>Contact preference:</h4>
+          <input type="radio" name="c-option" value="E-mail"> E-mail 
+          <input type="radio" name="c-option" value="Phone"> Phone 
+          <input type="radio" name="c-option" value="Mail"> Mail <br>
+
+            <h4>Address:</h4>
+             <input type="text" name="address" placeholder="Street Address"> 
+             <input type="text" name="aptbuilding" placeholder="Apt, Building"> 
+             <input type="text" name="city" placeholder="City"> 
+             <input type="text" name="zip" placeholder="Zip code"> 
+             <input type="text" name="state" placeholder="State"> 
+             <input type="text" name="country" placeholder="Country"> <br><br>
+			 <div><input type="checkbox" id = "likes" onmouseover="myFocusFunction()">
+             <label>Click here if you like our website </label></div><br>
+			 <button type="submit" class="btn btn-primary" value="send" name="" onclick="submit_form()">Submit</button>
+        </form><br>
+        </fieldset>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h3>&copy; Reserved by Haseeb</h3>
+</div>
+
+</body>
+</html>
